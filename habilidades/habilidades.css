@@ -1,0 +1,103 @@
+#habilidades h2 {
+    text-align: center;
+    margin-top: -44px;
+    margin-bottom: 6px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.section-header h2 {
+    margin: 0 20px;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.left-line,
+.right-line {
+    flex-grow: 1;
+    border: none;
+    height: 3px;
+    background-color: #00ffff;
+    position: relative;
+    top: -24px;
+}
+
+.left-line {
+    margin-right: 10px;
+}
+
+.right-line {
+    margin-left: 10px;
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    background-color: #000;
+}
+
+.habilidades p {
+    font-size: 16px;
+}
+
+
+/* Animação para a seção Habilidades */
+.moveToLeftCenter {
+    animation: moveToLeftCenter 2s ease-in-out forwards;
+}
+
+.moveFromBottom {
+    animation: moveFromBottom 2s ease-in-out forwards;
+}
+
+.moveToRightCenter {
+    animation: moveToRightCenter 2s ease-in-out forwards;
+}
+
+@keyframes moveToLeftCenter {
+    0% {
+        transform: translateX(-95px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes moveFromBottom {
+    0% {
+        transform: translateY(90px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes moveToRightCenter {
+    0% {
+        transform: translateX(90px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

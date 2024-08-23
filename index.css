@@ -1,0 +1,167 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #000;
+    color: #f4f4f4;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    height: 40px;
+}
+
+.navbar-left {
+    position: relative; 
+}
+
+.navbar-left h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0;
+    position: absolute;
+    left: 20px; 
+    top: 50%; /* Centraliza verticalmente dentro do contêiner */
+    transform: translateY(-50%); /* centralização vertical */
+}
+
+.navbar-left a {
+    text-decoration: none;
+}
+
+.navbar-left a:hover {
+    color: #222;
+}
+
+.navbar-right {
+    list-style: none;
+    padding-right: 175px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar-right li {
+    margin-left: 20px;
+}
+
+.navbar-right li a {
+    color: #ffffff9a;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-right li a:hover {
+    color: #ffffff;
+}
+
+.text-content {
+    flex: 2;
+    text-align: justify;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+hr {
+    border: none;
+    border-top: 3px solid;
+    color: #ffffff;
+    text-align: center;
+    height: 5px;
+}
+
+h2 {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #222;
+    padding: 10px;
+    color: #f4f4f4;
+    width: 100%;
+}
+
+footer p {
+    width: 90%;
+    flex-wrap: wrap;
+    text-align: center; 
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.close-icon {
+    display: none;
+    cursor: pointer;
+    color: #fdfffd;
+    position: absolute;
+    z-index: 2;
+}
+
+@media (max-width: 1000px) {
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 15px;
+        font-size: 28px;
+        z-index: 2;
+    }
+
+    .navbar-right {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: #222;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 60px 0 20px;
+        z-index: 1;
+    }
+
+    .navbar-right.active {
+        display: flex;
+    }
+
+    .navbar-right li {
+        margin: 10px 0;
+    }
+
+    .close-icon {
+        display: none;
+        position: absolute;
+        right: 50px;
+        top: 15px;
+        font-size: 28px;
+    }
+
+    .close-icon.active {
+        display: block;
+    }
+
+    .menu-icon.active {
+        display: none;
+    }
+}

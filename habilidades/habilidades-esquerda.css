@@ -1,0 +1,210 @@
+.habilidades-esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza o conteúdo da seção */
+    width: 95%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+/* Ajustes para cada linha de ícones */
+.primeira-linha,
+.segunda-linha {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+    /* Espaçamento horizontal entre ícones */
+    flex-wrap: wrap;
+}
+
+.icone-html i {
+    color: #e34c26;
+}
+
+.icone-css i {
+    color: #1572b6;
+}
+
+.icone-js i {
+    color: #f7df1e;
+}
+
+
+.icone-html i,
+.icone-css i,
+.icone-js i,
+.icone-python svg,
+.icone-figma svg {
+    width: 82px;
+    height: 82px;
+    font-size: 82px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    /* Espaçamento vertical entre os ícones */
+}
+
+/* Centralizando o texto sob cada ícone */
+.icone-html p,
+.icone-css p,
+.icone-js p,
+.icone-python svg,
+.icone-figma svg {
+    margin-top: 8px;
+    text-align: center;
+}
+
+
+/* Para telas maiores que 1000px */
+@media (min-width: 1001px) {
+    .habilidades-esquerda {
+        flex-direction: column;
+        margin-bottom: 25px;
+        margin-left: 25px;
+        transform: translateX(40px);
+    }
+
+    .primeira-linha,
+    .segunda-linha {
+        gap: 2px;
+        /* Espaçamento horizontal entre ícones */
+    }
+
+    /* Controle adicional de espaçamento entre ícones na Habilidades Esquerda */
+    .icone-html i,
+    .icone-css i,
+    .icone-js i {
+        margin-bottom: 6px;
+        /* Espaçamento vertical entre ícones */
+    }
+
+    /* Move os textos dos icones */
+    .icone-python svg,
+    .icone-figma svg {
+        margin-bottom: 0;
+    }
+
+    /* Move os icones */
+    .icone-python,
+    .icone-figma {
+        margin-top: 9.5px;
+    }
+
+    .segunda-linha,
+    .icone-figma p,
+    .icone-python p {
+        margin-top: 6px;
+    }
+
+    .primeira-linha,
+    .icone-html p,
+    .icone-css p,
+    .icone-js p {
+        margin-top: 3px;
+    }
+}
+
+
+/* Para telas entre 1000px e 700px */
+@media (max-width: 1000px) and (min-width: 700px) {
+    .habilidades-esquerda {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajuste o icone */
+    .primeira-linha .icone-html i,
+    .icone-css i,
+    .icone-js i {
+        margin-top: 10px;
+    }
+
+    /* Ajuste o texto do icone */
+    .primeira-linha .icone-html p,
+    .icone-css p,
+    .icone-js p {
+        margin-top: -11px;
+    }
+
+    /* Ajuste o icone */
+    .segunda-linha .icone-python svg,
+    .icone-figma svg {
+        margin-top: 18px;
+    }
+
+    .segunda-linha .icone-python p,
+    .icone-figma p {
+        margin-top: -8px;
+    }
+
+    .primeira-linha,
+    .segunda-linha {
+        width: 90%;
+        gap: 5px;
+    }
+
+
+    .icone-html i,
+    .icone-css i,
+    .icone-js i,
+    .icone-python svg,
+    .icone-figma svg {
+        margin-bottom: 20px;
+    }
+}
+
+/* Para telas entre 700px e 600px */
+@media (max-width: 700px) and (min-width: 600px) {
+    .habilidades-esquerda {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .primeira-linha,
+    .segunda-linha {
+        gap: 10px;
+    }
+
+    .icone-html i,
+    .icone-css i,
+    .icone-js i,
+    .icone-python svg,
+    .icone-figma svg {
+        margin-bottom: 15px;
+    }
+}
+
+/* Para telas menores que 600px */
+@media (max-width: 600px) {
+    .habilidades-esquerda {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .primeira-linha,
+    .segunda-linha {
+        gap: 8px;
+    }
+
+    .icone-html i,
+    .icone-css i,
+    .icone-js i,
+    .icone-python svg,
+    .icone-figma svg {
+        width: 70px;
+        height: 70px;
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
+
+    .icone-html p,
+    .icone-css p,
+    .icone-js p,
+    .icone-python svg,
+    .icone-figma svg {
+        font-size: 14px;
+    }
+}
